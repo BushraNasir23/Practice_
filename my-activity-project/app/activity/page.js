@@ -19,28 +19,28 @@ const ActivityPage = () => {
           price: "Free",
           location: "Tampines",
           host: "Omar Shaddiq",
-          image: "/images/Image.png",
+          image: "/images/5 1.png",
         },
         {
           title: "Learn how to make your own clay jewelry",
           price: "$20",
           location: "Tampines",
           host: "Leila Lim",
-          image: "/images/Image.png",
+          image: "/images/5 1.png",
         },
         {
           title: "Learn how to play the guitar!",
           price: "From $20",
           location: "Tampines",
           host: "Kenny Chua",
-          image: "/images/Image.png",
+          image: "/images/5 1.png",
         },
         {
           title: "Learn how to roast coffee beans",
           price: "Free",
           location: "Tampines",
           host: "Omar Shaddiq",
-          image: "/images/Image.png",
+          image: "/images/5 1.png",
         },
       ],
     },
@@ -69,12 +69,12 @@ const ActivityPage = () => {
   return (
     <div style={{ padding: "60px" }}>
       <div className=" flex flex-col lg:flex-row">
-        {/* Image Gallery Section */}
+        {/* img Gallery Section */}
         <div className="lg:w-3/4 p-4" style={{ width:"857px",height: "424px",top:"151px", margin:"25px", }} >
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
-            {/* First Column (1 image, no extra space below) */}
+            {/* First Column (1 img, no extra space below) */}
             <div className="col-span-1">
-              <Image
+              <img
                 src="/images/5 1.png"
                 alt="Activity 1"
                 className="w-full h-full object-cover rounded-lg"
@@ -82,10 +82,10 @@ const ActivityPage = () => {
               />
             </div>
 
-            {/* Second Column (2 images stacked with adjusted heights) */}
+            {/* Second Column (2 imagesstacked with adjusted heights) */}
             <div className="col-span-1 space-y-2">
               <div>
-                <Image
+                <img
                   src="/images/1 1.png"
                   alt="Activity 2"
                   className="w-full h-full object-cover rounded-lg"
@@ -96,7 +96,7 @@ const ActivityPage = () => {
                 />
               </div>
               <div>
-                <Image
+                <img
                   src="/images/1 1.png"
                   alt="Activity 3"
                   className="w-full h-full object-cover rounded-lg"
@@ -108,10 +108,10 @@ const ActivityPage = () => {
               </div>
             </div>
 
-            {/* Third Column (2 images stacked with adjusted heights) */}
+            {/* Third Column (2 imagesstacked with adjusted heights) */}
             <div className="col-span-1 space-y-2">
               <div>
-                <Image
+                <img
                   src="/images/2 1.png"
                   alt="Activity 4"
                   className="w-full h-full object-cover rounded-lg"
@@ -122,7 +122,7 @@ const ActivityPage = () => {
                 />
               </div>
               <div>
-                <Image
+                <img
                   src="/images/2 1.png"
                   alt="Activity 5"
                   className="w-full object-cover rounded-lg"
@@ -195,7 +195,7 @@ const ActivityPage = () => {
     </p>
   </div>
 
-  {/* Image Gallery */}
+  {/* img Gallery */}
   <div className="pt-6">
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       <div>
@@ -271,21 +271,21 @@ height: "323px",
                 Body text for describing why this product is simply a must-buy.
               </p>
               <div className="grid grid-cols-3 gap-4">
-            <Image
+            <img
               src="/images/5 1.png"
-              alt="Review image 1"
+              alt="Review img 1"
               className="w-full h-full object-cover rounded-lg"
               style={{ width:"123px",height:"123px",margin:"5px"}}
             />
-            <Image
+            <img
               src="/images/5 1.png"
-              alt="Review image 2"
+              alt="Review img 2"
               className="w-full h-full object-cover rounded-lg"
               style={{ width:"123px",height:"123px",margin:"5px"}}
             />
-            <Image
+            <img
               src="/images/5 1.png"
-              alt="Review image 3"
+              alt="Review img 3"
               className="w-full h-full object-cover rounded-lg"
               style={{ width:"123px",height:"123px",margin:"5px"}}
             />
@@ -293,7 +293,7 @@ height: "323px",
             </div>
           </div>
 
-          {/* Image Gallery */}
+          {/* img Gallery */}
         
         </div>
       </div>

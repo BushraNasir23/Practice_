@@ -78,7 +78,10 @@ const ActivityPage = () => {
           src="/images/5 1.png"
           alt="Activity 1"
           className="w-full h-full object-cover rounded-lg"
-          style={{ maxHeight: "424px", objectFit: "cover" }}
+          style={{ maxHeight: "424px" ,width:"424px"}}
+          width={424}
+          height={424}
+          
         />
       </div>
 
@@ -88,13 +91,17 @@ const ActivityPage = () => {
           src="/images/1 1.png"
           alt="Activity 2"
           className="w-full object-cover rounded-lg"
-          style={{ height: "203px" }}
+          style={{ height: "203px",width:"100%" }}
+          width={203}
+          height={203}
         />
         <Image
           src="/images/1 1.png"
           alt="Activity 3"
           className="w-full object-cover rounded-lg"
-          style={{ height: "203px" }}
+          style={{ height: "203px",width:"100%" }}
+          width={203}
+          height={203}
         />
       </div>
 
@@ -104,13 +111,17 @@ const ActivityPage = () => {
           src="/images/2 1.png"
           alt="Activity 4"
           className="w-full object-cover rounded-lg"
-          style={{ height: "203px" }}
+          style={{ height: "203px" ,width:"100%"}}
+          width={203}
+          height={203}
         />
         <Image
           src="/images/2 1.png"
           alt="Activity 5"
           className="w-full object-cover rounded-lg"
-          style={{ height: "203px" }}
+          style={{ height: "203px",width:"100%" }}
+          width={424}
+          height={203}
         />
       </div>
     </div>
@@ -239,22 +250,30 @@ const ActivityPage = () => {
         {/* Image Gallery */}
         <div className="grid grid-cols-3 gap-4 mt-2">
           <Image
-            src="/images/5 1.png"
+            src="/images/2 1.png"
             alt="Review image 1"
             className="w-full h-full object-cover rounded-lg"
-            style={{ height: "123px" }}
+            style={{ height: "123px",width:"123px" }}
+            width={123}
+            height={123}
+           
           />
           <Image
             src="/images/5 1.png"
             alt="Review image 2"
             className="w-full h-full object-cover rounded-lg"
-            style={{ height: "123px" }}
+            style={{ height: "123px",width:"123px" }}
+            width={123}
+            height={123}
           />
           <Image
             src="/images/5 1.png"
             alt="Review image 3"
             className="w-full h-full object-cover rounded-lg"
-            style={{ height: "123px" }}
+            style={{ height: "123px" ,width:"123px"}}
+            width={123}
+            height={123}
+            
           />
         </div>
       </div>
