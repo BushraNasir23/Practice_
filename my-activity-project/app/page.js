@@ -68,73 +68,57 @@ const ActivityPage = () => {
   };
   return (
     <div style={{ padding: "60px" }}>
-     <div className="flex flex-col lg:flex-row lg:space-x-4">
+    <div className="flex flex-col lg:flex-row lg:space-x-4">
   {/* Image Gallery Section */}
-  <div
-  className="lg:w-3/4 p-4"
-  style={{ marginTop: "25px", marginLeft: "20px" }}
->
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"> {/* Adjust gap size */}
-    {/* First Column (1 image, no extra space below) */}
-    <div className="col-span-1">
-      <img
-        src="/images/5 1.png"
-        alt="Activity 1"
-        className="w-full h-full object-cover rounded-lg"
-        style={{ height: "424px", maxHeight: "424px", objectFit: "cover" }}
-      />
-    </div>
-
-    {/* Second Column (2 images stacked with adjusted heights) */}
-    <div className="col-span-1 grid grid-rows-2 gap-2">
+  <div className="lg:w-3/4 p-4" style={{ marginTop: "25px", marginLeft: "20px" }}>
+    <div className="grid grid-cols-3 gap-2">
+      {/* First Column */}
       <div>
-        <img
+        <Image
+          src="/images/5 1.png"
+          alt="Activity 1"
+          className="w-full h-full object-cover rounded-lg"
+          style={{ maxHeight: "424px", objectFit: "cover" }}
+        />
+      </div>
+
+      {/* Second Column */}
+      <div className="grid grid-rows-2 gap-2">
+        <Image
           src="/images/1 1.png"
           alt="Activity 2"
-          className="w-full h-full object-cover rounded-lg"
-          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }} 
+          className="w-full object-cover rounded-lg"
+          style={{ height: "203px" }}
         />
-      </div>
-      <div>
-        <img
+        <Image
           src="/images/1 1.png"
           alt="Activity 3"
-          className="w-full h-full object-cover rounded-lg"
-          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }}
+          className="w-full object-cover rounded-lg"
+          style={{ height: "203px" }}
         />
       </div>
-    </div>
 
-    {/* Third Column (2 images stacked with adjusted heights) */}
-    <div className="col-span-1 grid grid-rows-2 gap-2">
-      <div>
-        <img
+      {/* Third Column */}
+      <div className="grid grid-rows-2 gap-2">
+        <Image
           src="/images/2 1.png"
           alt="Activity 4"
-          className="w-full h-full object-cover rounded-lg"
-          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }} 
+          className="w-full object-cover rounded-lg"
+          style={{ height: "203px" }}
         />
-      </div>
-      <div>
-        <img
+        <Image
           src="/images/2 1.png"
           alt="Activity 5"
-          className="w-full h-full object-cover rounded-lg"
-          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }}
+          className="w-full object-cover rounded-lg"
+          style={{ height: "203px" }}
         />
       </div>
     </div>
   </div>
-</div>
-
-
 
   {/* Sidebar Section */}
-  <div
-    className="lg:w-1/4 p-4 bg-gray-300 rounded-lg  mt-14"
-    style={{ height: "auto", maxHeight: "400px" }}
-  >
-    <h2 className="text-xl font-semibold text-center">Who's going?</h2>
+  <div className="lg:w-1/4 p-4 bg-gray-300 rounded-lg mt-14" style={{ height: "auto", maxHeight: "400px" }}>
+    <h2 className="text-xl font-semibold text-center">{"Who's going?"}</h2>
     <div className="flex justify-center items-center mt-4">
       <div className="flex space-x-2">
         <span className="h-8 w-8 rounded-full bg-red-500"></span>
@@ -145,8 +129,7 @@ const ActivityPage = () => {
       </div>
     </div>
     <div className="pt-6 space-y-4">
-      {/* Goers and Price Section - Side by Side */}
-      <div className="flex space-x-6 justify-between">
+      <div className="flex justify-between">
         {/* Goers Section */}
         <div>
           <p className="text-sm text-gray-500">Goers</p>
@@ -168,8 +151,9 @@ const ActivityPage = () => {
       <button className="w-full bg-black text-white py-2 rounded-lg">Tip/Pay</button>
     </div>
   </div>
-
 </div>
+
+
 
 
       <div className="w-full lg:w-1/2 mx-auto lg:mx-6 p-6 space-y-4" >
@@ -254,19 +238,19 @@ const ActivityPage = () => {
         
         {/* Image Gallery */}
         <div className="grid grid-cols-3 gap-4 mt-2">
-          <img
+          <Image
             src="/images/5 1.png"
             alt="Review image 1"
             className="w-full h-full object-cover rounded-lg"
             style={{ height: "123px" }}
           />
-          <img
+          <Image
             src="/images/5 1.png"
             alt="Review image 2"
             className="w-full h-full object-cover rounded-lg"
             style={{ height: "123px" }}
           />
-          <img
+          <Image
             src="/images/5 1.png"
             alt="Review image 3"
             className="w-full h-full object-cover rounded-lg"

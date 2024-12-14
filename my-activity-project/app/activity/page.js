@@ -74,7 +74,7 @@ const ActivityPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
             {/* First Column (1 image, no extra space below) */}
             <div className="col-span-1">
-              <img
+              <Image
                 src="/images/5 1.png"
                 alt="Activity 1"
                 className="w-full h-full object-cover rounded-lg"
@@ -85,7 +85,7 @@ const ActivityPage = () => {
             {/* Second Column (2 images stacked with adjusted heights) */}
             <div className="col-span-1 space-y-2">
               <div>
-                <img
+                <Image
                   src="/images/1 1.png"
                   alt="Activity 2"
                   className="w-full h-full object-cover rounded-lg"
@@ -96,7 +96,7 @@ const ActivityPage = () => {
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/1 1.png"
                   alt="Activity 3"
                   className="w-full h-full object-cover rounded-lg"
@@ -111,7 +111,7 @@ const ActivityPage = () => {
             {/* Third Column (2 images stacked with adjusted heights) */}
             <div className="col-span-1 space-y-2">
               <div>
-                <img
+                <Image
                   src="/images/2 1.png"
                   alt="Activity 4"
                   className="w-full h-full object-cover rounded-lg"
@@ -122,7 +122,7 @@ const ActivityPage = () => {
                 />
               </div>
               <div>
-                <img
+                <Image
                   src="/images/2 1.png"
                   alt="Activity 5"
                   className="w-full object-cover rounded-lg"
@@ -142,7 +142,7 @@ const ActivityPage = () => {
                     width:"420px",
                     marginTop:"45px",
                   }}>
-          <h2 className="text-xl font-semibold text-center">Who's going?</h2>
+          <h2 className="text-xl font-semibold text-center">{"Who's going?"}</h2>
           <div className="flex justify-center items-center mt-2 mx-15">
             <div className="flex space-x-2  mx-10">
               <span className="h-8 w-8 rounded-full bg-red-500"></span>
@@ -271,19 +271,19 @@ height: "323px",
                 Body text for describing why this product is simply a must-buy.
               </p>
               <div className="grid grid-cols-3 gap-4">
-            <img
+            <Image
               src="/images/5 1.png"
               alt="Review image 1"
               className="w-full h-full object-cover rounded-lg"
               style={{ width:"123px",height:"123px",margin:"5px"}}
             />
-            <img
+            <Image
               src="/images/5 1.png"
               alt="Review image 2"
               className="w-full h-full object-cover rounded-lg"
               style={{ width:"123px",height:"123px",margin:"5px"}}
             />
-            <img
+            <Image
               src="/images/5 1.png"
               alt="Review image 3"
               className="w-full h-full object-cover rounded-lg"
