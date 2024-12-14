@@ -1,8 +1,7 @@
 [build]
-  publish = "build" # Use "dist" if you're using Vue or another framework
-  command = "npm run build" # Replace with your build command
+  command = "npm run build"
+  publish = ".next"
+  functions = "netlify/functions"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
