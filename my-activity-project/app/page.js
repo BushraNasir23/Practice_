@@ -71,65 +71,67 @@ const ActivityPage = () => {
      <div className="flex flex-col lg:flex-row lg:space-x-4">
   {/* Image Gallery Section */}
   <div
-    className="lg:w-3/4 p-4"
-    style={{ marginTop: "25px" ,marginLeft:"20px",}}
-  >
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-      {/* First Column (1 image, no extra space below) */}
-      <div className="col-span-1">
+  className="lg:w-3/4 p-4"
+  style={{ marginTop: "25px", marginLeft: "20px" }}
+>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"> {/* Adjust gap size */}
+    {/* First Column (1 image, no extra space below) */}
+    <div className="col-span-1">
+      <img
+        src="/images/5 1.png"
+        alt="Activity 1"
+        className="w-full h-full object-cover rounded-lg"
+        style={{ height: "424px", maxHeight: "424px", objectFit: "cover" }}
+      />
+    </div>
+
+    {/* Second Column (2 images stacked with adjusted heights) */}
+    <div className="col-span-1 grid grid-rows-2 gap-2">
+      <div>
         <img
-          src="/images/5 1.png"
-          alt="Activity 1"
+          src="/images/1 1.png"
+          alt="Activity 2"
           className="w-full h-full object-cover rounded-lg"
-          style={{ height: "424x", maxHeight: "424px" }}
+          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }} 
         />
       </div>
-
-      {/* Second Column (2 images stacked with adjusted heights) */}
-      <div className="col-span-1 space-y-4">
-        <div>
-          <img
-            src="/images/1 1.png"
-            alt="Activity 2"
-            className="w-full object-cover rounded-lg"
-            style={{ height: "auto", maxHeight: "203px" }}
-          />
-        </div>
-        <div>
-          <img
-            src="/images/1 1.png"
-            alt="Activity 3"
-            className="w-full object-cover rounded-lg"
-            style={{ height: "auto", maxHeight: "203px" }}
-          />
-        </div>
+      <div>
+        <img
+          src="/images/1 1.png"
+          alt="Activity 3"
+          className="w-full h-full object-cover rounded-lg"
+          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }}
+        />
       </div>
+    </div>
 
-      {/* Third Column (2 images stacked with adjusted heights) */}
-      <div className="col-span-1 space-y-4">
-        <div>
-          <img
-            src="/images/2 1.png"
-            alt="Activity 4"
-            className="w-full object-cover rounded-lg"
-            style={{ height: "auto", maxHeight: "203px" }}
-          />
-        </div>
-        <div>
-          <img
-            src="/images/2 1.png"
-            alt="Activity 5"
-            className="w-full object-cover rounded-lg"
-            style={{ height: "auto", maxHeight: "203px" }}
-          />
-        </div>
+    {/* Third Column (2 images stacked with adjusted heights) */}
+    <div className="col-span-1 grid grid-rows-2 gap-2">
+      <div>
+        <img
+          src="/images/2 1.png"
+          alt="Activity 4"
+          className="w-full h-full object-cover rounded-lg"
+          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }} 
+        />
+      </div>
+      <div>
+        <img
+          src="/images/2 1.png"
+          alt="Activity 5"
+          className="w-full h-full object-cover rounded-lg"
+          style={{ maxHeight: "203px", maxWidth: "100%", objectFit: "cover" }}
+        />
       </div>
     </div>
   </div>
+</div>
+
+
 
   {/* Sidebar Section */}
   <div
-    className="lg:w-1/4 p-4 bg-gray-300 rounded-lg  mt-10"
+    className="lg:w-1/4 p-4 bg-gray-300 rounded-lg  mt-14"
     style={{ height: "auto", maxHeight: "400px" }}
   >
     <h2 className="text-xl font-semibold text-center">Who's going?</h2>
@@ -215,8 +217,8 @@ const ActivityPage = () => {
   <hr className="border-t-2 border-black" />
 
   {/* About Section */}
-  <div className="p-2 space-y-2" >
-    <h2 className="text-lg sm:text-xl font-semibold" style={{margin:"2px",padding:"5px",}}>About the Activity</h2>
+  <div className="space-y-2" >
+    <h2 className="text-lg sm:text-xl font-semibold" style={{padding:"5px",}}>About the Activity</h2>
     <p style={{margin:"2px",padding:"5px",}}>Body text for describing why this product is simply a must-buy.</p>
     <h2 className="text-lg sm:text-xl font-semibold" style={{margin:"2px",padding:"5px",}}>Highlights</h2>
     <p style={{margin:"2px",padding:"5px",}}>Body text for describing why this product is simply a must-buy.</p>
