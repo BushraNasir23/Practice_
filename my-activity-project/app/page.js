@@ -228,8 +228,8 @@ const ActivityPage = () => {
 
       {/* Reviews Section */}
 
-      <div className="p-6" style={{ width: "70%", height: "auto" }}>
-  <div className="p-6 max-w-4xl space-y-4 ">
+      <div  style={{ height: "auto" ,marginLeft:"50px",}}>
+  <div className="max-w-3xl  space-y-4 rounded-lg">
     {/* Heading Section */}
     <div className="flex justify-between mb-4 flex-col sm:flex-row">
       <h1 className="text-xl font-semibold">Reviews</h1>
@@ -277,8 +277,9 @@ const ActivityPage = () => {
 </div>
 
 
+
       {/* Related Activities */}
-      <div className="pt-4" style={{ maxWidth: "1500px" }}>
+      <div className="pt-2" style={{ maxWidth: "1500px",marginTop: "-10px" }}>
   {activities.map((category, index) => (
     <div key={index}>
       <h2
